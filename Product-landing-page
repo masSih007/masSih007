@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input{
+  color: black;
+}
+button{
+  background-color: #43655A;
+border-radius: 2px;
+border-style: groove;
+}
+a{
+  color: black;
+}
+
+nav{
+ float: right;
+
+}
+
+li{
+ display: inline;
+}
+
+#header{
+ position: fixed;
+ width: 100%;
+ top: 0;
+ left: 0;
+background-color: #43655A;
+
+}
+
+#header-img{
+
+ width: 360px;
+ height: 46px;
+ display: inline;
+background-color: #43655A;
+
+}
+
+#form{
+  text-align: center;
+  position: relative;
+  top: 6px;
+}
+#email{
+  width: 323px;
+  height: 25px;
+  background-color: #fdfdfd;
+opacity: 0.4;
+}
+#submit{
+  width: 83px;
+  height: 23px;
+  background-color: #43655A;
+
+}
+#submit:hover{
+  background-color: #628281;
+  width: 84px;
+  height: 24px;
+}
+button:hover{
+  background-color: #628281;
+  width: 84px;
+  height: 24px;
+}
+#features{
+  text-align: center;
+  position: relative;
+  top: 1px;
+
+}
+
+#how-it-works{
+  text-align: center;
+
+}
+
+
+#pricing{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+footer{
+ text-align: right;
+ background-color: #43655A;
+  
+}
+@media (max-width: 500px){
+  button{
+      background-color: #628281;
+  border-radius: 2px;
+  border-style: groove;
+  }
+  a{
+      color: black;
+  }
+nav{
+ float: right;
+
+}
+
+li{
+ display: inline;
+}
+#header{
+ position: fixed;
+ width: 100%;
+ top: 0;
+ left: 0;
+background-color: #43655A;
+
+}
+#header-img{
+
+
+  width: 360px;
+  height: 46px;
+  display: inline;
+background-color: #43655A;
+
+}
+#form{
+ text-align: center;
+}
+#email{
+ width: 150px;
+ height: 25px;
+ position: relative;
+left: auto;
+}
+#submit{
+  width: 83px;
+  height: 23px;
+  background-color: #43655A;
+
+}
+#submit:hover{
+  background-color: #628281;
+  width: 84px;
+  height: 24px;
+}
+button:hover{
+  background-color: #628281;
+  width: 84px;
+  height: 24px;
+}
+#features{
+  text-align: center;
+
+}
+#how-it-works{
+  text-align: center;
+
+}
+
+
+#pricing{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+footer{
+ text-align: right;
+ background-color: #43655A;
+  
+}
+
+}
+</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>product landing page</title>
+</head>
+
+
+<body>
+    
+      <header id="header">
+      
+          <img
+            id="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="original trombones logo"
+          />
+      
+
+        <nav id="nav-bar">
+        <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+        
+      </header>
+    
+
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  <input type="email" 
+  id="email" 
+  name="email"
+  placeholder="Enter your email address."
+
+required><br>
+<input type="submit" id="submit" value="Get Started">
+
+</form>
+
+<section id="features">
+ <h2>Premium Materials</h2>
+              <p>
+                Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase.
+              </p>
+         <i class="fa fa-3x fa-truck"></i>
+              <h2>Fast Shipping</h2>
+              <p>
+                We make sure you recieve your trombone as soon as we have
+                finished making it. We also provide free returns if you are not
+                satisfied.
+              </p>
+            
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            
+              <h2>Quality Assurance</h2>
+              <p>
+                For every purchase you make, we will ensure there are no damages
+                or faults and we will check and test the pitch of your
+                instrument.
+              </p>
+</section>
+            
+<section id="how-it-works">
+      <iframe
+            id="video"
+            height="300"
+            width="600"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            allowfullscreen
+            controls
+          ></iframe>
+</section>
+
+<section id="pricing">
+
+            <h2>$600</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+        
+            <h2>$900</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+    
+      
+            <h2>$1200</h2>
+            <ol>
+              <li>Plays similar to a Trumpet</li>
+              <li>Great for Jazz Bands</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="btn">Select</button>
+        
+</section>
+
+
+  <footer>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span>Copyright 2016, Original Trombones</span>
+
+        </footer>
+
+  </body>
+  </html>

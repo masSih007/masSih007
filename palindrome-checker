@@ -1,0 +1,16 @@
+function palindrome(str) {
+
+const toLowerCase = str.toLowerCase();
+const sticked = toLowerCase.match(/[a-z0-9]/g).join('');
+const punctuationLess = sticked.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+const reversedString = punctuationLess.match(/[a-z0-9]/g).reverse().join('');
+  console.log(punctuationLess);
+  console.log(reversedString);
+if(reversedString === punctuationLess) {
+  return true;
+}
+else {
+  return false;
+}
+}
+console.log(palindrome("A man, a plan, a canal. Panama"));

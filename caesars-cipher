@@ -1,0 +1,8 @@
+function rot13 (code){
+  const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  const cipher = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+  const regex = /[a-z]/gi;
+
+  return code.replace(regex, a => cipher[alphabet.indexOf(a)]);
+}
+console.log(rot13("SERR PBQR PNZC"));
